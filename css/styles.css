@@ -9,6 +9,7 @@
     --additional-color: #ffffff;
     --bg-color: #2F303A;
 }
+
 /* Common styles */
 body {
     font-family: var(--main-font-family);
@@ -59,7 +60,6 @@ body {
 }
 
 /* Section Hero */
-
 .hero {
     background-color: var(--bg-color);
 }
@@ -88,7 +88,6 @@ body {
 }
 
 /* Section Features */
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -116,7 +115,6 @@ body {
 }
 
 /* Section Examples, Section Team*/
-
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -138,7 +136,6 @@ body {
 }
 
 /* Footer */
-
 .footer {
     background-color: var(--bg-color);
 }
@@ -192,4 +189,163 @@ body {
 /* Current */
 .current {
     color: var(--current-color);
+}
+/* Positioning */
+
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav, .list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    display: flex;
+}
+
+.nav {
+    margin-left: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 50px;
+}
+
+.header-link {
+    margin-left: 50px;
+}
+
+.hero > .container {
+    align-items: center;
+    width: 1600px;
+    height: 600px;
+}
+.hero-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 452px;
+    margin-right: 452px;
+    padding-top: 200px;
+}
+
+.hero-button {
+    border: none;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.feature-content {
+    width: 270px;
+}
+
+.feature-content + .feature-content {
+    margin-left: 30px;
+}
+
+.feature-title {
+    margin-top: 94px;
+    margin-bottom: 10px;
+
+}
+
+.examples-title {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.examples-image + .examples-image {
+    margin-left: 30px;
+}
+
+.team-member + .team-member {
+    margin-left: 30px;
+}
+
+.member-name, .member-position {
+    text-align: center;
+}
+
+.member-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.member-position {
+    margin-bottom: 30px;
+}
+
+.team-member {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+}
+
+.footer-position {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.footer-list {
+    display: block;
+}
+
+.footer-links + .footer-links {
+    margin-top: 10px;
+}
+
+/* Positioning Portfolio */
+nav > .container {
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    }
+
+.nav-button + .nav-button {
+    margin-left: 8px;
+}
+
+.nav-button {
+    padding: 6px 22px 6px 22px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: inline;
+}
+
+.cards {
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.cards {
+    gap: 30px;
+    margin-bottom: 65px;
 }
